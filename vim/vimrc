@@ -1,0 +1,20 @@
+" Hew's vimrc
+" It's a Unix system, I know this.
+
+set nocompatible
+set encoding=utf-8
+syntax on
+filetype plugin indent on
+set number
+set backspace=indent,eol,start
+set autoread
+set hidden
+set autoindent
+set shiftwidth=4
+set tabstop=4
+set softtabstop=4
+set nowrap
+set title
+
+" Vundle
+" Plugin 'elixir-lang/vim-elixir'
