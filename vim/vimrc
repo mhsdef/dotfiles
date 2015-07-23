@@ -4,7 +4,6 @@
 set nocompatible
 set encoding=utf-8
 syntax on
-filetype plugin indent on
 set number
 set backspace=indent,eol,start
 set autoread
@@ -15,6 +14,22 @@ set tabstop=4
 set softtabstop=4
 set nowrap
 set title
+set ignorecase
+set smartcase
+set hlsearch
+set noerrorbells
+set backupdir=~/.vim/backup//  " move backup/swap/undo files to central location
+set directory=~/.vim/swap//    " double slashes force vim to avoid name collisions
+set undodir=~/.vim/undo//
+
+filetype off
 
 " Vundle
-" Plugin 'elixir-lang/vim-elixir'
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'elixir-lang/vim-elixir'
+Plugin 'pangloss/vim-javascript'
+call vundle#end()
+
+filetype plugin indent on
