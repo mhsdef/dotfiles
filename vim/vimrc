@@ -4,32 +4,53 @@
 set nocompatible
 set encoding=utf-8
 syntax on
-set number
+"set number
+set shell=/bin/bash
+set ruler
 set backspace=indent,eol,start
 set autoread
 set hidden
+set history=1000
+set ttimeout
+set ttimeoutlen=100
+set showcmd
 set autoindent
 set shiftwidth=4
 set tabstop=4
 set softtabstop=4
+set scrolloff=5
 set nowrap
 set title
 set ignorecase
 set smartcase
 set hlsearch
+" Use <C-L> to clear the highlighting of :set hlsearch.
+if maparg('<C-L>', 'n') ==# ''
+	nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
+endif
+set incsearch
 set noerrorbells
-set backupdir=~/.vim/backup//  " move backup/swap/undo files to central location
-set directory=~/.vim/swap//    " double slashes force vim to avoid name collisions
+set backupdir=~/.vim/backup//   " move backup/swap/undo files to central location
+set directory=~/.vim/swap//     " double slashes force vim to avoid name collisions
 set undodir=~/.vim/undo//
 
-filetype off
+noremap , :
 
 " Vundle
+filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'pangloss/vim-javascript'
+Plugin 'scrooloose/syntastic'
+Plugin 'jpo/vim-railscasts-theme'
+Plugin 'tomasr/molokai'
 call vundle#end()
-
 filetype plugin indent on
+
+let g:syntastic_php_checkers = ['php']
+let g:syntastic_javascript_checkers = ['jsxhint']
+
+autocmd BufNew,BufEnter *.ex,*.exs,*.eex colorscheme railscasts
+autocmd BufWritePre * :%s/\s\+$//e   "strip all trailing whitespace
