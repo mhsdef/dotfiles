@@ -56,7 +56,13 @@ let g:syntastic_php_checkers = ['php']
 let g:syntastic_javascript_checkers = ['jsxhint']
 
 set background=dark
-colorscheme base16-monokai
-autocmd BufNew,BufEnter *.php,*.js colorscheme base16-monokai
-autocmd BufNew,BufEnter *.ex,*.exs,*.eex colorscheme railscasts
+
+if has("gui_macvim")
+	colorscheme base16-monokai
+	autocmd BufNew,BufEnter *.php,*.js colorscheme base16-monokai
+	autocmd BufNew,BufEnter *.ex,*.exs,*.eex colorscheme railscasts
+else
+	colorscheme railscasts
+endif
+
 autocmd BufWritePre * :%s/\s\+$//e   "strip all trailing whitespace
