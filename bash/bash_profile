@@ -1,5 +1,6 @@
 alias phpgrep='find . -type f -name "*.php" -print0 | xargs -0 grep -n $1'
 alias jsgrep='find . -type f -name "*.js" -print0 | xargs -0 grep -n $1'
+alias exgrep='find . -type f -name "*.ex" -print0 | xargs -0 grep -n $1'
 
 alias c='cd ~/code'
 alias d='cd ~/Downloads'
