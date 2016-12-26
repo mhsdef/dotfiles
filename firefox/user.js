@@ -78,6 +78,6 @@ user_pref("plugins.click_to_play", true);                       // [boolean] whe
 //// === MISC === ////
 //////////////////////
 user_pref("browser.startup.page", 1);                           // [integer] page to display on startup - 1=home, 2=blank, 3=restore last session
-user_pref("browser.startup.homepage", "https://duckduckgo.com");    // [string] page to display when clicking the Home button
+user_pref("browser.startup.homepage", "https://start.duckduckgo.com");    // [string] page to display when clicking the Home button
 user_pref("browser.backspace_action", 2);                       // [integer] keyboard backspace key action: 0=go back, 1=page up, 2=disable
 user_pref("general.warnOnAboutConfig", false);                  // [boolean] whether to display a warning when using about:config
