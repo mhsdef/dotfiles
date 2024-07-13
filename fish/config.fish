@@ -9,7 +9,3 @@ alias exgrep='find . -type f \( -name "*.ex" -o -name "*.exs" \) -print0 | xargs
 alias c='cd ~/code'
 alias d='cd ~/Downloads'
 alias dt='cd ~/Desktop'
-alias mc='cd ~/code/automattic-sandbox/missioncontrol/public_html'
-alias uni='unison -ui text -repeat watch automattic-sandbox'
-alias wpcom='cd ~/code/automattic-sandbox/wpcom/public_html'
-alias www='cd ~/vagrant-local/www'
