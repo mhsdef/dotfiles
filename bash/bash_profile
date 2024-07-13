@@ -5,10 +5,6 @@ alias exgrep='find . -type f -name "*.ex" -print0 | xargs -0 grep -n $1'
 alias c='cd ~/code'
 alias d='cd ~/Downloads'
 alias dt='cd ~/Desktop'
-alias prs='~/proxy start'
-alias prr='~/proxy restart'
-alias uni='unison -ui text -repeat watch automattic-sandbox'
-alias www='cd ~/vagrant-local/www'
 
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
