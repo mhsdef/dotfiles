@@ -1,5 +1,5 @@
 [editor]
-program = "hx"
+program = "/opt/homebrew/bin/hx"
 args = []
 
 [shell]
