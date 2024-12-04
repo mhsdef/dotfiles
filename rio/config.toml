@@ -1,0 +1,7 @@
+[editor]
+program = "hx"
+args = []
+
+[shell]
+program = "/opt/homebrew/bin/fish"
+args = ["--login"]

@@ -1,0 +1,7 @@
+[user]
+	name = Matt Sutton
+	email = git@mhs.fastmail.com
+[init]
+	defaultBranch = main
+[core]
+	excludesfile = ~/.gitignore_global

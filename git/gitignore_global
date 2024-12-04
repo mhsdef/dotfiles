@@ -1,0 +1,7 @@
+*~
+*.swp
+.DS_Store
+.helix/
+.vim/
+.vscode/
+.zed/

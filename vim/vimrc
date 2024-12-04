@@ -1,4 +1,4 @@
-" Hew's vimrc
+" mhs's vimrc
 " It's a Unix system, I know this.
 
 set nocompatible
@@ -44,7 +44,6 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'slashmili/alchemist.vim'
-Plugin 'fatih/vim-go'
 Plugin 'pangloss/vim-javascript'
 Plugin 'dleonard0/pony-vim-syntax'
 Plugin 'scrooloose/syntastic'

@@ -1,0 +1,5 @@
+export EDITOR="hx"
+export PAGER="less"
+export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.bin"
+
+eval "$(fnm env --use-on-cd --shell zsh)"
