@@ -17,6 +17,7 @@ fi
 
 # Symlink configs
 ln -sf $PWD/fish ~/.config/fish
+ln -sf $PWD/ghostty ~/.config/ghostty
 ln -sf $PWD/rio ~/.config/rio
 ln -sf $PWD/zed ~/.config/zed
 
